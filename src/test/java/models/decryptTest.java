@@ -7,12 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class decryptTest {
-    @Test
-    public void createencrypt_instanceOfEncrypt(){
-        decrypt newDecrypt = new decrypt();
-        assertTrue(newDecrypt instanceof decrypt);
 
-    }
     @Test
     public void myDecrypt_Method_Encrypts(){
         decrypt newDecrypt = new decrypt();
