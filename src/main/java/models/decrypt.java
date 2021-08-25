@@ -10,6 +10,11 @@ public class decrypt {
         userInputChar = userInput.toCharArray();
         char[] nums =new char[userInputChar.length];
 
-
+        for (char c : userInputChar) {
+            int inputAsci = c - eKey;
+            char decrypteds = (char) inputAsci;
+            decrypted.append(String.valueOf(decrypteds));
+        }
+        return decrypted.toString();
     }
 }
