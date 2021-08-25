@@ -7,19 +7,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class decryptTest {
-
     @Test
     public void myDecrypt_Method_Encrypts(){
         decrypt newDecrypt = new decrypt();
         String encryption = newDecrypt.myDecrypt("Kviex", 4);
         assertEquals("Great",encryption );
     }
-    @Test
-    public void myDecrypt_Method_Encrypts0_Encrypts(){
-        decrypt newDecrypt = new decrypt();
-        String encryption = newDecrypt.myDecrypt("]h`", 25);
-        assertEquals("DOG",encryption );
-    }
+
     @Test
     public void myDecrypt_Method_Encrypts1_Encrypts(){
         decrypt newDecrypt = new decrypt();
