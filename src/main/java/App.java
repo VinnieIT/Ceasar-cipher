@@ -35,7 +35,9 @@ public class App {
                 String userInput = encryptInput.nextLine();
                 Scanner eKeyInput = new Scanner(System.in);
                 System.out.println("Enter the Key you want to encrypt with");
-
+                String eKeyString = eKeyInput.nextLine();
+                int eKeyControl = Integer.parseInt(eKeyString);
+                System.out.println(newEncryption.myDecrypt(userInput, eKeyControl));
             } else {
                 System.out.println("****You did not Select a valid choice!! E or D *****");
 
