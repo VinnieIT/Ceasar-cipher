@@ -39,6 +39,7 @@ public class App {
                 int eKeyControl = Integer.parseInt(eKeyString);
                 System.out.println(newEncryption.myDecrypt(userInput, eKeyControl));
             } else {
+                System.out.println("****You did not Select a valid choice!! E or D *****");
 
 
             }
