@@ -24,7 +24,12 @@ class decryptTest {
         decrypt newDecrypt = new decrypt();
         String encryption = newDecrypt.myDecrypt("J!mpwf!nz!mjgf", 27);
         assertEquals("I love my life",encryption );
-
+    } @Test
+    public void myDecrypt_Method_Encrypts2_Encrypts(){
+        decrypt newDecrypt = new decrypt();
+        String encryption = newDecrypt.myDecrypt("Ruzu\u007Ft", 1000);
+        assertEquals("Finish",encryption );
+    }
 }
 
 
