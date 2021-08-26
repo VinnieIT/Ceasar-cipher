@@ -26,6 +26,8 @@ public class App {
                 System.out.println("Enter the Key you want to encrypt with");
                 String eKeyString = eKeyInput.nextLine();
                 int eKeyControl = Integer.parseInt(eKeyString);
+                System.out.println("***********************************************");
+                System.out.println("****************  Encrypted Output:       *********************");
                 System.out.println(newEncryption.myEncrypt(userInput, eKeyControl));
 
             } else if (userChoice.toUpperCase().equals("D")) {
@@ -37,6 +39,8 @@ public class App {
                 System.out.println("Enter the Key you want to encrypt with");
                 String eKeyString = eKeyInput.nextLine();
                 int eKeyControl = Integer.parseInt(eKeyString);
+                System.out.println("***********************************************");
+                System.out.println("****************  Decrypted Output:       *********************");
                 System.out.println(newEncryption.myDecrypt(userInput, eKeyControl));
             } else {
                 System.out.println("****You did not Select a valid choice!! E or D *****");
